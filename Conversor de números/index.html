@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+	<html lang="en">
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Conversor de Números Romano</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js" charset="UTF-8" defer></script>
+	</head>
+
+	<img class="logo" src = "home-logo-large.633a2c7a.png">
+	
+	<body style="text-align:center;">
+		<div class="row">
+			<div class="input-field col s12">
+				<label for="decimal" class="active">Numero inicial:</label>
+				<input type="text" placeholder="Informe um número" id="decimal" autofocus>
+			</div>
+	
+			<div class="input-field col s12">
+				<label for="roman" class="active">Numero convertido :</label>
+				<input type="tel" class="roman" id="roman" readonly="readonly">
+			</div>
+	
+			<button cass="button" onclick="converterInt(document.getElementById('decimal').value)">Converter para Decimal</button>
+	
+			<script>
+				function converterInt(num) {
+					document.getElementById('roman').value = converterParaInteiros(num)
+				} 
+				function converterRoman(num) {
+					document.getElementById('decimal').value = romano(input)
+				}        
+			</script>
+	</body>
+	
+	</head>
+	
+	</html>
